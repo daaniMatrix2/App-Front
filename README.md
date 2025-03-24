@@ -26,55 +26,70 @@ Aplicativo desenvolvido em Flutter para demonstrar conhecimentos básicos de fro
 
 projeto_flutter_jerusalem.jpg
 
-##🚀 Como Executar
+**##🚀 Como Executar ##**
+cmd:
+- flutter run
 
-Certifique-se de ter o Flutter instalado.
-
-Clone este repositório:
-
-git clone https://github.com/daaniMatrix2/App-Front.git
-
-Acesse a pasta do projeto:
-
-cd App-Front
-
-Execute o seguinte comando para instalar as dependências:
-
-flutter pub get
-
-Conecte um dispositivo ou use um emulador.
-
-Execute o aplicativo:
-
-flutter run
-
-##📂 Estrutura do Projeto
+**##📂 Estrutura do Projeto##**
 
 App-Front/
-│-- lib/
-│   ├── main.dart  # Arquivo principal do aplicativo
-│-- assets/
-│   ├── img/muro.jpg  # Imagem utilizada no app
-│-- pubspec.yaml  # Configuração das dependências e ativos
+├── lib/
+│   └── main.dart      # Ponto de entrada do app
+├── assets/
+│   └── img/
+│       └── muro.jpg   # Imagem principal
+├── pubspec.yaml       # Gerenciamento de dependências
+└── ...                # Outros arquivos Flutter
 
-##🛠️ Tecnologias Utilizadas
+**##🛠️ Configuração de Assets##**
 
-Flutter - Framework para desenvolvimento multiplataforma.
+No pubspec.yaml, verifique:
 
-Dart - Linguagem de programação utilizada no Flutter.
-
-##📌 Observação
-
-Caso a imagem não carregue, verifique se a pasta assets está corretamente referenciada no arquivo pubspec.yaml:
-
-flutter:
+**flutter:**
+  uses-material-design: true
   assets:
-    - assets/img/muro.jpg
-
-E depois rode:
-
+    - assets/img/  # Pasta completa (recomendado)
+    
+Execute após alterações:
 flutter pub get
 
-##📄 Licença
+**🔍 Solução de Problemas**
+Imagem não aparece?
 
-Este projeto está sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
+**Verifique o caminho no código:**
+
+Image.asset('assets/img/muro.jpg') // Deve corresponder ao YAML
+Confira a indentação no pubspec.yaml
+
+Reinicie o app após flutter pub get
+
+**Imagem no README:**
+Para exibir a screenshot no GitHub:
+
+Adicione o arquivo .jpg no repositório (ex.: em /docs)
+
+**Use caminho absoluto:**
+
+
+![Screenshot](https://raw.githubusercontent.com/seuuser/seurepo/main/caminho/imagem.jpg)
+💻 Tecnologias
+Flutter 3.x
+
+Dart 3.x
+
+**Material Design**
+
+
+
+**Principais melhorias:**
+1. Organização visual com emojis e espaçamento
+2. Sequência lógica de execução
+3. Solução de problemas destacada
+4. Explicação clara sobre hospedagem de imagens para GitHub
+5. Códigos formatados com sintaxe correta
+
+**Para fazer a imagem aparecer no GitHub:**
+1. Adicione o arquivo `projeto_flutter_jerusalem.jpg` no seu repositório (sugiro criar uma pasta `docs/`)
+2. Atualize o link no README para:
+   ```markdown
+   ![Screenshot](https://raw.githubusercontent.com/daaniMatrix2/App-Front/main/docs/projeto_flutter_jerusalem.jpg)
