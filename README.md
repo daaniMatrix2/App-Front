@@ -1,22 +1,28 @@
-##📱 Aplicativo de Demonstração Flutter
+# 📱 Aplicativo de Demonstração Flutter
 
-Este é um aplicativo desenvolvido em Flutter para demonstrar conhecimentos básicos de frontend no Android. O app apresenta o uso de imagens, ícones, botões, textos, containers, colunas e linhas, proporcionando uma interface simples e funcional.
+Aplicativo desenvolvido em Flutter para demonstrar conhecimentos básicos de frontend. Apresenta componentes como imagens, ícones, botões e layout responsivo.
 
-##✨ Funcionalidades
+## ✨ Funcionalidades
+- 🖼️ Exibição de imagem local
+- 🧩 Organização com Containers
+- 📐 Layout com Colunas e Linhas
+- ⚡ Ícones interativos
+- 📝 Textos formatados
+- 🚦 AppBar personalizada
 
-Exibição de imagem.
+## 🖼️ Captura de Tela
+![Screenshot do App](https://github.com/daaniMatrix2/App-Front/blob/main/projeto_flutter_jerusalem.jpg) <!-- Substituir por URL real -->
 
-Uso de containers para organização dos elementos.
+## 🚀 Como Executar
+1. **Pré-requisitos**
+   - Flutter instalado ([guia oficial](https://flutter.dev/docs/get-started/install))
+   - Dispositivo Android/emulador ou iOS/simulador
 
-Aplicação de colunas e linhas para dispor os componentes.
-
-Uso de ícones interativos.
-
-Exibição de texto formatado.
-
-Barra de navegação superior (AppBar).
-
-##🖼️ Captura de Tela
+2. **Configuração**
+   ```bash
+   git clone https://github.com/daaniMatrix2/App-Front.git
+   cd App-Front
+   flutter pub get
 
 projeto_flutter_jerusalem.jpg
 
